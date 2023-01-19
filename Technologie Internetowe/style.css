@@ -1,0 +1,350 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(59, 58, 58);
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    /* background-attachment: fixed; */
+    background-size: cover;
+
+}
+.container {
+    cursor: url(cursor.svg), auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.logoPanel {
+    opacity: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 17vh;
+    min-height: 120px;
+    background: #c72508;
+}
+.logo {
+    height: 80%;
+    min-width: fit-content;
+    min-height: 20px;
+    align-items: center;
+    margin-left: 5%;
+    width: fit-content;
+}
+.logo img {
+    
+
+    align-items: center;
+    min-width: max-content ;
+    height: 100%;
+}
+.napis {
+    position: sticky;
+
+    margin-left: 5%;
+    font-size: calc(15px + 1vw + 1vh);
+    min-width: max-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
+}
+.napis:hover {
+    cursor: default;
+}
+.panelBackground {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5vw;
+    align-items: center;
+    min-width: 440px;
+    width: 25vw;
+    min-height: 120px;
+}
+nav {
+    display: flex;
+    width: 45vw;
+    height: 100%;
+    align-self: flex-start;
+    justify-self: flex-end;
+    align-items: center;
+    margin-right: 5vw;
+    flex-direction: row;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+
+    align-items: flex-start;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+
+    justify-content: space-around;
+
+
+}
+nav ul li {
+    min-height: max-content;
+    opacity: 100%;
+    display: flex;
+    font-family: 'Sulphur Point';
+    
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    font-size: calc(0.6vw + 0.6vh);   
+
+    width: 15vh;
+
+    
+    --c: goldenrod;
+    color: var(--c);
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    
+}
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+nav ul li:hover {
+    
+    color: black;
+    
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+.content {
+    
+    display: flex;
+    width: 100%;
+    height: ;
+    flex-direction: row;
+}
+.centerpanel {
+    width: 60vw;
+    margin-left: 3vw;
+    margin-top: 10vh;
+
+}
+.pokazemy {
+    animation: 2s normal 0s 1 slideInFromLeft;
+
+
+    font-family: 'Sulphur Point';
+    font-weight: 400;
+    font-size: calc(15px + 2vw + 2vh);
+    line-height: 70px;
+
+    color: #FFFFFF;
+
+    text-shadow: -5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.co {
+    margin-top: 3vh;
+    margin-left: 7vw;
+
+    font-family: 'Sulphur Point';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(15px + 2vw + 2vh);
+    line-height: 80px;
+
+    color: #FFFFFF;
+    text-shadow: -5px 5px 4px rgba(0, 0, 0, 0.75);
+
+    animation: 3s normal 0s 1 slideInFromLeft;
+
+}
+.czerwonyProstokat {
+    display: flex;
+    margin-top: 2vh;
+
+    width: calc(15px + 24vw + 7vh);
+
+    height: calc(15px + 5vw + 10vh);
+    margin-left: 10vw;
+    background: #E12301;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: flex-end;
+
+}
+.pizza {
+    display: flex;
+
+    align-items: flex-end;
+
+    margin-left: 1vw;
+    font-family: 'Sulphur Point';
+    font-style: normal;
+    font-size: calc(15px + 5vw + 5vh);
+    
+    align-items: center;
+    
+
+    color: #FFFFFF;
+    
+    text-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+
+    animation: 3s normal 0s 1 slideInFromLeft ;
+
+}
+.wiecej {
+    animation: 4s normal 0s 1 slideInFromLeft;
+
+    margin-left: 5vw;
+    margin-top: 2vh;
+    font-family: 'Sulphur Point';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(15px + 2vw + 2vh);
+
+    line-height: 70px;
+
+    color: #FFFFFF;
+    
+    text-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+.fade {
+    width: auto;
+    height: 30vh;
+    background: linear-gradient(rgba(0,0,0,0), rgb(59, 58, 58));
+}
+.rozdzielacz {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(59, 58, 58);
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.fadeDown {
+    width: auto;
+    height: 30vh;
+    background: linear-gradient( rgba(59, 58, 58, 1), black);
+}
+.o_autorze {
+    margin-top: 1vh;
+    font-family: 'Sulphur Point';
+    color: #FFFFFF;
+    font-size: calc(15px + 2vw + 2vh);
+    text-align: center;
+}
+.napisy_na_dole {
+    font-family: 'Sulphur Point';
+    color: #FFFFFF;
+    width: 100%;
+    font-size: calc(10px + 1vw + 1vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    margin-right: 5vw;
+    flex-direction: row; 
+    align-self: center;  
+    justify-self: center;
+}
+.napisy_na_dole ul {
+    list-style-type: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    display: flex;
+
+    align-items: flex-start;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    justify-content: space-around;
+
+}
+.napisy_na_dole ul li{
+    height: 100%;
+    margin-top: 3vh;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.napisy_na_dole ul li img {
+    margin-top: 3vh;
+    width: 150px;
+}
+.napisy_na_dole ul li img:hover {
+	animation: flip-horizontal-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+}
+.footer {
+    background-color: rgb(59, 58, 58);
+    height: 40px;
+    width: 100%;
+    font-family: 'Sulphur Point';
+    font-size: large;
+    position: fixed;
+    bottom: 0;
+    
+    
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(0);
+
+    }
+  }
+
+  @keyframes flip-horizontal-bottom {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(-360deg);
+    }
+  }
+  
