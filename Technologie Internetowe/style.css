@@ -59,7 +59,7 @@ html, body {
     justify-content: flex-start;
     margin-left: 5vw;
     align-items: center;
-    min-width: 440px;
+    min-width: 400px;
     width: 25vw;
     min-height: 120px;
 }
@@ -251,17 +251,16 @@ nav ul li span:nth-child(4) {
     background: linear-gradient(rgba(0,0,0,0), rgb(59, 58, 58));
 }
 .rozdzielacz {
-    height: 400px;
+    
     width: 100%;
     background-color: rgb(59, 58, 58);
     align-items: flex-end;
     justify-content: flex-end;
 }
-.fadeDown {
+/* .fadeDown {
     width: auto;
     height: 30vh;
-    background: linear-gradient( rgba(59, 58, 58, 1), black);
-}
+} */
 .o_autorze {
     margin-top: 1vh;
     font-family: 'Sulphur Point';
@@ -285,15 +284,12 @@ nav ul li span:nth-child(4) {
 }
 .napisy_na_dole ul {
     list-style-type: none;
-    flex-direction: row;
     margin: 0;
     padding: 0;
 
     width: 100%;
     display: flex;
-
-    align-items: flex-start;
-    height: 100%;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 
@@ -301,9 +297,11 @@ nav ul li span:nth-child(4) {
 
 }
 .napisy_na_dole ul li{
-    height: 100%;
-    margin-top: 3vh;
 
+    width: 400px;
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -314,18 +312,14 @@ nav ul li span:nth-child(4) {
     margin-top: 3vh;
     width: 150px;
 }
-.napisy_na_dole ul li img:hover {
-	animation: flip-horizontal-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 
-}
 .footer {
     background-color: rgb(59, 58, 58);
     height: 40px;
     width: 100%;
     font-family: 'Sulphur Point';
     font-size: large;
-    position: fixed;
-    bottom: 0;
+    display: flex;
     
     
 }
