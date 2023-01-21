@@ -3,18 +3,26 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <style>
-        body{
-            background-image: url('ciasto-tlo.png');
-        }
-           
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Point</title>
     <link rel="shortcut icon" type="image/x-icon" href="pizza-slice.png" />
     <link href='https://fonts.googleapis.com/css?family=Sulphur Point' rel='stylesheet'>
     <script src="sctript.js"></script>
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+
+        background-image: linear-gradient(to bottom, transparent, rgb(51, 50, 50)), url('ciastoTlo.jpg');
+        background-attachment: fixed;
+        cursor: url(cursor.svg), auto;
+
+    }
+    </style>
 
 </head>
 <body>
@@ -36,20 +44,47 @@
                         ciasto
                         <span></span><span></span><span></span><span></span>
                     </li>
-                    <li>
+                    <li onclick="setPage('sos.html')">
                         sos
                         <span></span><span></span><span></span><span></span>
                     </li>
                     
-                    <li>
+                    <li onclick="setPage('dodatki.html')">
                         dodatki
                         <span></span><span></span><span></span><span></span>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="content">
-
+        
+        <div class="recipeContent">
+            <div class="recipePanel">
+                <h1>New York style</h1>
+                <ul>
+                    <li>pół kilo mąki</li>
+                    <li>półtorej szklanki wody</li>
+                    <li>3 łyżeczki soli</li>
+                    <li>8 gramów suchych drożdży</li>
+                    <li>oliwa</li>
+                    <li>łyżka cukru albo 2</li>
+                </ul>
+                <div class="doP">
+                    <p>Ciasto typu new York style to najszybsza propozycja. Ciasto to można wykonać w bardzo szykim tempie, nawet na godzinę przed pieczeniem.
+                        Mieszamy wodę z drożdzami, solą i cukrem. Wszystko mieszamy i zostawiamy na 5 minut. następnie mieszamy, miksujemy, wyrabiamy ciasto dodając mąkę do momentu gdy ciasto odtywa się od ścianek naczynia w którym jest wyrabiane. Z takiego ciasta formujemy 3/4 piłeczki i obtaczamy w oliwie. Zostawiamy w ciepłym miejscu na przynajmniej pół godziny. Ciasto pieczemy w temperaturze 180&#8451</p>
+                </div>
+            </div>
+            <div class="recipePanel">
+                <h1>Neapolitana</h1>
+                <ul>
+                    <li>pół kilo mąki</li>
+                    <li>dwie szklanki wody</li>
+                    <li>2 łyżeczki soli</li>
+                    <li>8 gramów suchych drożdży</li>
+                </ul>
+                <div class="doP">
+                    <p>Do wychodowania ciasta neapolitańskiego potrzebujemy przynajmniej 2 dni. Na początku przygotowujemy zaczyn. Do małego naczynia(może być szklanka lub miska) wlewamy pół szklanki wody i mieszamy z drożdzami, po czym dodajemy dwie łyżki mąki i mieszamy do momentu otrzymania żadkiej papki. Taki roztwór wkładamy do lodówki na kilka dni. jeżeli po długim czasie nie zrobimy z tego pizzy można po prostu dodać mąki, wody i zostawić do rośnięcia dalej. Gdy nadejdzie moment kiedy chcemy zrobić pizzę, mieszamy zaczyn z resztą składników. Ciasto pieczemy w 250&#8451</p>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
@@ -57,4 +92,5 @@
         </div>
     </div>
 </body>
+
 </html>

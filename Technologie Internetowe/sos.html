@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Point</title>
+    <link rel="shortcut icon" type="image/x-icon" href="pizza-slice.png" />
+    <link href='https://fonts.googleapis.com/css?family=Sulphur Point' rel='stylesheet'>
+    <script src="sctript.js"></script>
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        background-color: rgb(59, 58, 58);
+        background-image: linear-gradient(to bottom, transparent, rgb(51, 50, 50)), url('sosTlo.jpg');
+
+
+        background-attachment: fixed;
+        cursor: url(cursor.svg), auto;
+
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="logoPanel">
+            <div class="panelBackground">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+                <div class="napis">PIZZA POINT</div>
+            </div>
+            <nav>
+                <ul>
+                    <li onclick="setPage('index.html')">
+                        home
+                        <span></span><span></span><span></span><span></span>
+                    </li>
+                    <li onclick="setPage('ciasto.html')">
+                        ciasto
+                        <span></span><span></span><span></span><span></span>
+                    </li>
+                    <li onclick="setPage('sos.html')">
+                        sos
+                        <span></span><span></span><span></span><span></span>
+                    </li>
+                    
+                    <li onclick="setPage('dodatki.html')">
+                        dodatki
+                        <span></span><span></span><span></span><span></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="recipeContent">
+            <div class="recipePanel">
+                <h1>Sos klasyczny włoski</h1>
+                <ul>
+                    <li>puszka 400g pomidorów san marzano(bądz innych dobrych pomidorów)</li>
+                    <li>sól</li>
+                </ul>
+                <div class="doP">
+                    <p> Nic dodać nic ująć pomidory te mają niesamowity smak i idealnie pasują do ciasta drożdżowego. Pomidory wyjmujemy z puszki i wkładamy do miski. Rozdrabniemy pomidory na mniejsze części widelcem bądź mikserem, ale z tym nie warto przesadzać ponieważ większe kawałki pomidora są świetnym dodatkiem. po rozdrobieniu dodajemy szczyptę soli i gotowe.</p>
+                </div>
+            </div>
+            <div class="recipePanel">
+                <h1>Sos New York style</h1>
+                <ul>
+                    <li>passata pomidorowa 400ml</li>
+                    <li>2 ząbki czosnku</li>
+                    <li>łyżeczka soli</li>
+                    <li>łyżeczka cukru</li>
+                    <li>koncentrat pomidorowy</li>
+                    <li>oliwa</li>
+
+                </ul>
+                <div class="doP">
+                    <p>Jest to sos bardzo popularny w pizzeriach, więc przypadnie wielu osobom do gustu. do garnka wlewamy sporą ilość oliwy podgrzewamy i po chwili dodajemy posiekany czosnek i łyżkę koncentratu pomidorowego. Smażymy kilka minut i dodajemy passatę, sól oraz cukier. Resztki passaty możemy wypłukać z opakowania zwykłą wodą z kranu, i dolać do sosu. Nie pogorszy to w żadnym stopniu jego smaku a wręcz przeciwnie, sos będzie gotował się dłużej co wyciągnie więcej smaku z czosnku.</p>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="footer">
+            <div>autor strony: Kamil Krukar</div>
+        </div>
+    </div>
+</body>
+
+</html>
